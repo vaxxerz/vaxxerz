@@ -8,7 +8,6 @@
 **Hanyang University**  
 Department of Information Systems
 
-*From ideas to real-world applications.*
 
 </div>
 

@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# IN SIHWAN.
+# IN SIHWAN
 
 **SOFTWARE DEVELOPER**
 
@@ -66,7 +66,7 @@ pathfinding and location-aware navigation.
 **Technology**
 `JavaScript` · `Vite` · `Kakao Maps API` · `Supabase`
 
-**Achievement** — 3rd Place, University Club Hackathon
+**Achievement** — 3rd Place, University Club Hackathon (FORIF)
 
 <br>
 

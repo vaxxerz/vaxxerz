@@ -98,7 +98,8 @@ instead of guessing what "M" means at each brand.
 
 [![Repo](https://img.shields.io/badge/Repo-ganadidududu%2Fcoordit-181717?style=flat-square&logo=github)](https://github.com/ganadidududu/coordit)
 ![Role](https://img.shields.io/badge/Role-Backend_Development-333?style=flat-square)
-![Platform](https://img.shields.io/badge/Platform-iOS_·_Android-555?style=flat-square)
+[![iOS](https://img.shields.io/badge/iOS-App_Store-0D96F6?style=flat-square&logo=apple&logoColor=white)](https://apps.apple.com/kr/app/coordit/id6804425048)
+![Android](https://img.shields.io/badge/Android-555?style=flat-square&logo=android&logoColor=white)
 
 <details>
 <summary><b>Details — Key Engineering & Technology</b></summary>

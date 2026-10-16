@@ -1,4 +1,3 @@
-
 <div align="center">
 
 # IN SIHWAN
@@ -8,6 +7,11 @@
 **Hanyang University**  
 Department of Information Systems
 
+<br>
+
+[![Gmail](https://img.shields.io/badge/ian24665003@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ian24665003@gmail.com)
+[![Naver Mail](https://img.shields.io/badge/ian5003@naver.com-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:ian5003@naver.com)
+[![GitHub](https://img.shields.io/badge/vaxxerz-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/vaxxerz)
 
 </div>
 
@@ -20,87 +24,163 @@ interested in building practical and scalable software.
 
 My primary focus is backend engineering, with experience
 in full-stack development, database architecture,
-and turning ideas into working products.
+and turning ideas into working products — from mobile
+apps to production websites that real businesses run on.
 
 <br>
 
 ## 02 / SELECTED WORK
 
-### [coordit ↗](https://github.com/ganadidududu/coordit)
+> Click **Details** under each project to expand the engineering notes.
 
-**Fashion Technology · Team Project**
+<br>
 
-A fashion-tech platform designed to reduce uncertainty
-in online clothing purchases through personalized
-size recommendations and measurement-based fit analysis.
+### [HOWEON Corporate Website ↗](https://howeon-site.pages.dev/#/)
+
+**Industrial Web · Real-time 3D Product Showcase · Client Project**
+
+<a href="https://howeon-site.pages.dev/#/">
+  <img src="assets/howeon/desktop-home.png" alt="HOWEON website — home with real-time 3D bar screen model" width="100%">
+</a>
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/howeon/desktop-products.png" alt="Product overview — connected 3D treatment-process scene"></td>
+    <td width="50%"><img src="assets/howeon/desktop-projects.png" alt="Project archive with category, year and keyword filters"></td>
+  </tr>
+</table>
+
+A corporate website for a water-treatment equipment and plant engineering company.
+Interactive Three.js models show how each machine works, while 34 products,
+49 projects and 16 certifications are managed as structured content.
+
+[![Live](https://img.shields.io/badge/Live-howeon--site.pages.dev-00C2FF?style=flat-square)](https://howeon-site.pages.dev/#/)
+![Role](https://img.shields.io/badge/Role-Solo_Development-333?style=flat-square)
+![Source](https://img.shields.io/badge/Source-Private_(client_work)-555?style=flat-square)
+
+<details>
+<summary><b>Details — Key Engineering & Technology</b></summary>
+
+<br>
 
 **Key Engineering**
-- Measurement-based Fit Score Engine
-- RESTful API design and backend development
-- User data management and authentication
-- PostgreSQL-based relational data modeling
-- Integration between mobile clients and backend services
+- Migrated a monolithic vanilla JS page to a modular Vite build
+  without changing the existing visuals (verified by 22-shot pixel diff)
+- Real-time 3D product viewers with lazy-loaded model chunks,
+  adaptive quality and WebGL failure fallbacks
+- JSON content model with schema validation and reference checks
+  across products, projects, certificates and patents
+- Local admin tool for staff edits — scrypt auth, CSRF protection,
+  upload validation, change history and restore
+- Automated quality pipeline: unit tests, Playwright E2E on
+  Chromium / WebKit / Firefox at 4 viewport widths, build output audit
+- Mobile-first navigation and filtering, deployed on Cloudflare Pages
 
 **Technology**
-`TypeScript` · `Node.js` · `Express` · `PostgreSQL` · `Supabase`
+`JavaScript` · `Three.js` · `GSAP` · `Vite` · `Node.js` · `Playwright` · `GitHub Actions` · `Cloudflare Pages`
 
-**Role** — Backend Development
+</details>
+
+<br>
 
 ---
 
-### [HY-WAY ↗](https://github.com/vaxxerz/HY-WAY)
+### [coordit ↗](https://github.com/ganadidududu/coordit)
 
-**Campus Navigation · Independent Project**
+**Fashion Technology · Measurement-based Fit Analysis · Team Project**
 
-A navigation service designed for Hanyang University's
-campus, providing practical routes through graph-based
-pathfinding and location-aware navigation.
+<p align="center">
+  <img src="assets/coordit/wardrobe.png" alt="Closet with reference garment measurements" width="30%">
+  &nbsp;
+  <img src="assets/coordit/recommendation.png" alt="Fit Lab — recommended size, fit score and per-part differences" width="30%">
+  &nbsp;
+  <img src="assets/coordit/score-breakdown.png" alt="Score breakdown by size, silhouette and body part" width="30%">
+</p>
+
+An iOS & Android app that recommends the right size by comparing a product's
+size chart with the measurements of clothes you already fit well —
+instead of guessing what "M" means at each brand.
+
+[![Repo](https://img.shields.io/badge/Repo-ganadidududu%2Fcoordit-181717?style=flat-square&logo=github)](https://github.com/ganadidududu/coordit)
+![Role](https://img.shields.io/badge/Role-Backend_Development-333?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-iOS_·_Android-555?style=flat-square)
+
+<details>
+<summary><b>Details — Key Engineering & Technology</b></summary>
+
+<br>
 
 **Key Engineering**
-- Graph-based pathfinding using nodes and edges
-- Route comparison with campus shortcuts
-- Accessibility-aware routing with stairs and elevators
-- Kakao Maps API and browser geolocation integration
-- Supabase-based community data management
+- Deterministic Fit Score Engine — weighted, tolerance-normalized
+  Huber loss across 11 garment categories
+- Multi-garment reference profile using weighted median and
+  Huber-corrected mean to reduce outlier impact
+- REST API with Supabase token verification, per-user data scoping
+  and owner-based RLS policies
+- Atomic writes for closet, analysis and credit usage via
+  SQL RPC with idempotency keys
+- LLM-generated fit reports grounded in engine results,
+  with validated fallback explanations
+- Size-chart import from product URLs (Playwright · Cheerio)
 
 **Technology**
-`JavaScript` · `Vite` · `Kakao Maps API` · `Supabase`
+`TypeScript` · `Node.js` · `Express` · `Zod` · `PostgreSQL` · `Supabase` · `Docker`
 
-**Achievement** — 3rd Place, University Club Hackathon (FORIF)
+</details>
+
+<br>
+
+---
+
+### [HY-WAY ↗](https://hy-way.vercel.app)
+
+**Campus Navigation · Graph-based Pathfinding · Independent Project**
+
+<p align="center">
+  <img src="assets/hy-way/home.png" alt="Campus map with route search and portal markers" width="30%">
+  &nbsp;
+  <img src="assets/hy-way/route.png" alt="Normal route vs HY-WAY portal route comparison" width="30%">
+  &nbsp;
+  <img src="assets/hy-way/portal.png" alt="List of campus portals — shortcuts through buildings" width="30%">
+</p>
+
+A navigation service for Hanyang University's Seoul campus that finds
+the routes students actually take — through buildings, stairs and elevators
+("portals") that regular map apps don't know about.
+
+[![Live](https://img.shields.io/badge/Live-hy--way.vercel.app-0064FF?style=flat-square)](https://hy-way.vercel.app)
+[![Repo](https://img.shields.io/badge/Repo-vaxxerz%2FHY--WAY-181717?style=flat-square&logo=github)](https://github.com/vaxxerz/HY-WAY)
+![Award](https://img.shields.io/badge/🏆_3rd_Place-FORIF_Hackathon-F5A623?style=flat-square)
+
+<details>
+<summary><b>Details — Key Engineering & Technology</b></summary>
+
+<br>
+
+**Key Engineering**
+- Graph-based pathfinding over campus nodes and edges
+- Side-by-side comparison of normal and portal-shortcut routes
+- Accessibility-aware routing with slopes, stairs and elevators
+- GPS start point snapped to the nearest graph node
+- Building-based community and route reports on Supabase,
+  storing distance only — never exact coordinates
+
+**Technology**
+`JavaScript` · `Vite` · `Kakao Maps API` · `Supabase` · `Vercel`
+
+</details>
 
 <br>
 
 ## 03 / TECHNICAL STACK
 
-### Languages
-- **TypeScript** — Typed application and API development
-- **JavaScript** — Web applications and client-side logic
-- **Python** — Backend services and automation
-- **SQL** — Relational queries and data modeling
-
-### Frontend
-- **React** — Component-based user interfaces
-- **Next.js** — React application framework
-- **Vite** — Frontend development and build tooling
-- **Tailwind CSS** — Utility-first styling
-
-### Backend
-- **Node.js / Express** — RESTful API development
-- **FastAPI** — Python-based API services
-- **Authentication** — JWT, Supabase Auth
-- **API Integration** — Third-party services and external APIs
-
-### Database
-- **PostgreSQL** — Relational database design
-- **Supabase** — Managed PostgreSQL and backend services
-- **MariaDB** — SQL database management
-- **Data Security** — Access control and RLS policies
-
-### Infrastructure & Tools
-- **Docker** — Containerized application environments
-- **Vercel** — Web application deployment
-- **Google Cloud Run** — Cloud application hosting
-- **Git / GitHub** — Version control and collaboration
+| | |
+| --- | --- |
+| **Languages** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white) |
+| **Frontend** | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black) |
+| **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white) |
+| **Database** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white) |
+| **Infra & Tools** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=flat-square&logo=cloudflarepages&logoColor=white) ![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) |
 
 <br>
 
@@ -119,7 +199,7 @@ AI-Powered Applications · Database Systems
 
 Hanyang University · Information Systems
 
-[GitHub](https://github.com/vaxxerz)
+[ian24665003@gmail.com](mailto:ian24665003@gmail.com) · [ian5003@naver.com](mailto:ian5003@naver.com) · [GitHub](https://github.com/vaxxerz)
 
 <sub>Designed with simplicity in mind.</sub>
 

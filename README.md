@@ -137,9 +137,9 @@ instead of guessing what "M" means at each brand.
 **Campus Navigation · Graph-based Pathfinding · Independent Project**
 
 <p align="center">
-  <img src="assets/hy-way/home.png" alt="Campus map with route search and portal markers" width="30%">
+  <img src="assets/hy-way/map-route.png" alt="Map view — normal route vs portal route from IT/BT to HIT" width="30%">
   &nbsp;
-  <img src="assets/hy-way/route.png" alt="Normal route vs HY-WAY portal route comparison" width="30%">
+  <img src="assets/hy-way/route.png" alt="Route comparison — 11m 20s normal vs 7m 46s with 2 portals" width="30%">
   &nbsp;
   <img src="assets/hy-way/portal.png" alt="List of campus portals — shortcuts through buildings" width="30%">
 </p>

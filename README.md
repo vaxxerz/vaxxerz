@@ -46,7 +46,7 @@ apps to production websites that real businesses run on.
 <table>
   <tr>
     <td width="50%"><img src="assets/howeon/desktop-products.png" alt="Product overview — connected 3D treatment-process scene"></td>
-    <td width="50%"><img src="assets/howeon/desktop-projects.png" alt="Project archive with category, year and keyword filters"></td>
+    <td width="50%"><img src="assets/howeon/desktop-product-detail.png" alt="Product detail — interactive 3D double chain rotary bar screen"></td>
   </tr>
 </table>
 

@@ -39,16 +39,11 @@ apps to production websites that real businesses run on.
 
 **Industrial Web · Real-time 3D Product Showcase · Client Project**
 
-<a href="https://howeon-site.pages.dev/#/">
-  <img src="assets/howeon/desktop-home.png" alt="HOWEON website — home with real-time 3D bar screen model" width="100%">
-</a>
-
-<table>
-  <tr>
-    <td width="50%"><img src="assets/howeon/desktop-products.png" alt="Product overview — connected 3D treatment-process scene"></td>
-    <td width="50%"><img src="assets/howeon/desktop-product-detail.png" alt="Product detail — interactive 3D double chain rotary bar screen"></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://howeon-site.pages.dev/#/"><img src="assets/howeon/desktop-home.png" alt="HOWEON website — home with real-time 3D bar screen model" width="48%"></a>
+  &nbsp;
+  <a href="https://howeon-site.pages.dev/#/products/double-chain-bar-screen"><img src="assets/howeon/desktop-product-detail.png" alt="Product detail — interactive 3D double chain rotary bar screen" width="48%"></a>
+</p>
 
 A corporate website for a water-treatment equipment and plant engineering company.
 Interactive Three.js models show how each machine works, while 34 products,

@@ -146,7 +146,7 @@ the routes students actually take — through buildings, stairs and elevators
 
 [![Live](https://img.shields.io/badge/Live-hy--way.vercel.app-0064FF?style=flat-square)](https://hy-way.vercel.app)
 [![Repo](https://img.shields.io/badge/Repo-vaxxerz%2FHY--WAY-181717?style=flat-square&logo=github)](https://github.com/vaxxerz/HY-WAY)
-![Award](https://img.shields.io/badge/🏆_3rd_Place-FORIF_Hackathon-F5A623?style=flat-square)
+[![Award](https://img.shields.io/badge/🏆_3rd_Place-FORIF_Hackathon-F5A623?style=flat-square)](https://forif.org/hackathon/archive/submissions/1)
 
 <details>
 <summary><b>Details — Key Engineering & Technology</b></summary>
